@@ -19,11 +19,16 @@ yearEl.textContent = currentYear;
 
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
+// Also disable page scrolling while opening the navigation
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
+const html = document.querySelector("html");
+const body = document.querySelector("hero");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+  html.classList.toggle("overflow-y--hidden");
+  body.classList.toggle("overflow-y--hidden");
 });
 
 ///////////////////////////////////////////////////////////

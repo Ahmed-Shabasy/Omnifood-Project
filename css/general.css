@@ -265,6 +265,10 @@ body {
   text-align: center;
 }
 
+.overflow-y--hidden {
+  overflow-y: hidden;
+}
+
 strong {
   font-weight: 500;
 }
